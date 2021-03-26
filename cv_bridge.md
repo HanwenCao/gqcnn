@@ -1,4 +1,4 @@
-### Solution from here(https://github.com/pulver22/gym-gazebo/wiki/ERROR:-Cv_bridge-for-Python3)
+### Solution from [here](https://github.com/pulver22/gym-gazebo/wiki/ERROR:-Cv_bridge-for-Python3)
 * Install few dependencies: `python-catkin-tools` is needed for catkin tool
 `python3-dev` and `python3-catkin-pkg-modules` is needed to build cv_bridge
 `python3-numpy` and `python3-yaml` is cv_bridge dependencies
@@ -55,3 +55,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> from cv_bridge.boost.cv_bridge_boost import getCvType
 >>> 
 ```
+
+### Use in another workspace
+
+* Step1. create a separate workspace containing only cv_bridge as the above instruction
+* Step2. source this ws using source install/setup.bash --extend as the above instruction
+* Step3. source the main ws using source devel/setup.bash --extend
